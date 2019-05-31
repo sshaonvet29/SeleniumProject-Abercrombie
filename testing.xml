@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Abercrombie" parallel="methods" thread-count="2">
+    <test name="SmokeTest1">
+        <classes>
+            <class name="com.paxotech.abercrombie.qa.framework.test.functional.allTest.LoginPageFunctionality"/>
+        </classes>
+    </test>
+    <test name="SmokeTest2">
+        <classes>
+            <class name="com.paxotech.abercrombie.qa.framework.test.functional.allTest.HomePageFuntionality"/>
+        </classes>
+    </test>
+</suite>

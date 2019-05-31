@@ -1,0 +1,660 @@
+Feature: AberCrombie Login Functionality
+
+  Background:                               [90m# src/test/resources/features/AbercrombieLogin.feature:2[0m
+    [31mGiven [0m[31mUser can browse to an application[0m [90m# AppSteps.user_can_browse_to_an_application()[0m
+      [31mcucumber.runtime.CucumberException: Error creating bean with name 'com.paxotech.abercrombie.qa.framework.steps.AppSteps': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:182)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+      	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+      	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+      Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.paxotech.abercrombie.qa.framework.steps.AppSteps': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1095)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1040)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:505)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:341)
+      	at cucumber.runtime.java.spring.GlueCodeScope.get(GlueCodeScope.java:15)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:336)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:216)
+      	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:317)
+      	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:298)
+      	at cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:180)
+      	... 32 more
+      Caused by: org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+      	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1088)
+      	... 42 more
+      Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory$1.initialValue(DriverFactory.java:79)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory$1.initialValue(DriverFactory.java:1)
+      	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)
+      	at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory.getDriver(DriverFactory.java:115)
+      	at com.paxotech.abercrombie.qa.framework.BaseSteps.<init>(BaseSteps.java:9)
+      	at com.paxotech.abercrombie.qa.framework.steps.AppSteps.<init>(AppSteps.java:10)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+      	... 44 more
+      Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+      	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+      	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+      	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+      	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+      	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+      	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+      	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+      	... 59 more
+      Caused by: java.net.ConnectException: Connection refused
+      	at java.net.PlainSocketImpl.socketConnect(Native Method)
+      	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+      	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+      	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+      	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+      	at java.net.Socket.connect(Socket.java:589)
+      	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+      	... 72 more
+      [0m
+    [36mWhen [0m[36mBrowse to the url[0m                  [90m# AppSteps.browse_to_the_url()[0m
+    [36mThen [0m[36mabercrombie home page should show[0m  [90m# HomePageSteps.abercrombie_home_page_should_show()[0m
+
+  Scenario: 1. Invalid user valid password                                                  [90m# src/test/resources/features/AbercrombieLogin.feature:7[0m
+    [36mWhen [0m[36mUser click login button[0m                                                            [90m# LoginPageSteps.user_click_login_button()[0m
+    [36mThen [0m[36mLogin page should show[0m                                                             [90m# LoginPageSteps.login_page_should_show()[0m
+    [36mWhen [0m[36mEnter "[0m[36m[1maktar_NotValid@gmail.com[0m[36m" as email address[0m                                  [90m# LoginPageSteps.enter_as_email_address(String)[0m
+    [36mAnd [0m[36mEnter "[0m[36m[1mpaxotech123[0m[36m" as password[0m                                                     [90m# LoginPageSteps.enter_as_password(String)[0m
+    [36mAnd [0m[36mClick login[0m                                                                         [90m# LoginPageSteps.click_login()[0m
+    [36mThen [0m[36mInvalid email message display "[0m[36m[1mWe didn't find an account with this email address.[0m[36m"[0m [90m# LoginPageSteps.invalid_email_message_display(String)[0m
+
+  Background:                               [90m# src/test/resources/features/AbercrombieLogin.feature:2[0m
+    [31mGiven [0m[31mUser can browse to an application[0m [90m# AppSteps.user_can_browse_to_an_application()[0m
+      [31mcucumber.runtime.CucumberException: Error creating bean with name 'com.paxotech.abercrombie.qa.framework.steps.AppSteps': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:182)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+      	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+      	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+      Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.paxotech.abercrombie.qa.framework.steps.AppSteps': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1095)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1027)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:505)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:341)
+      	at cucumber.runtime.java.spring.GlueCodeScope.get(GlueCodeScope.java:15)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:336)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:216)
+      	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:317)
+      	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:298)
+      	at cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:180)
+      	... 32 more
+      Caused by: org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+      	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1088)
+      	... 42 more
+      Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory$1.initialValue(DriverFactory.java:79)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory$1.initialValue(DriverFactory.java:1)
+      	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)
+      	at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory.getDriver(DriverFactory.java:115)
+      	at com.paxotech.abercrombie.qa.framework.BaseSteps.<init>(BaseSteps.java:9)
+      	at com.paxotech.abercrombie.qa.framework.steps.AppSteps.<init>(AppSteps.java:10)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+      	... 44 more
+      Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+      	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+      	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+      	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+      	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+      	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+      	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+      	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+      	... 59 more
+      Caused by: java.net.ConnectException: Connection refused
+      	at java.net.PlainSocketImpl.socketConnect(Native Method)
+      	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+      	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+      	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+      	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+      	at java.net.Socket.connect(Socket.java:589)
+      	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+      	... 72 more
+      [0m
+    [36mWhen [0m[36mBrowse to the url[0m                  [90m# AppSteps.browse_to_the_url()[0m
+    [36mThen [0m[36mabercrombie home page should show[0m  [90m# HomePageSteps.abercrombie_home_page_should_show()[0m
+
+  Scenario: 2. Valid user invalid password                                                              [90m# src/test/resources/features/AbercrombieLogin.feature:15[0m
+    [36mWhen [0m[36mUser click login button[0m                                                                        [90m# LoginPageSteps.user_click_login_button()[0m
+    [36mThen [0m[36mLogin page should show[0m                                                                         [90m# LoginPageSteps.login_page_should_show()[0m
+    [36mWhen [0m[36mEnter "[0m[36m[1maktar203@gmail.com[0m[36m" as email address[0m                                                    [90m# LoginPageSteps.enter_as_email_address(String)[0m
+    [36mAnd [0m[36mEnter "[0m[36m[1mpaxotechx[0m[36m" as password[0m                                                                   [90m# LoginPageSteps.enter_as_password(String)[0m
+    [36mAnd [0m[36mClick login[0m                                                                                     [90m# LoginPageSteps.click_login()[0m
+    [36mThen [0m[36mInvalid password message display "[0m[36m[1mThe password you entered does not match the email provided.[0m[36m"[0m [90m# LoginPageSteps.invalid_password_message_display(String)[0m
+
+  Background:                               [90m# src/test/resources/features/AbercrombieLogin.feature:2[0m
+    [31mGiven [0m[31mUser can browse to an application[0m [90m# AppSteps.user_can_browse_to_an_application()[0m
+      [31mcucumber.runtime.CucumberException: Error creating bean with name 'com.paxotech.abercrombie.qa.framework.steps.AppSteps': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:182)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+      	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+      	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+      Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.paxotech.abercrombie.qa.framework.steps.AppSteps': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1095)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1027)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:505)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:341)
+      	at cucumber.runtime.java.spring.GlueCodeScope.get(GlueCodeScope.java:15)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:336)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:216)
+      	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:317)
+      	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:298)
+      	at cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:180)
+      	... 32 more
+      Caused by: org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+      	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1088)
+      	... 42 more
+      Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory$1.initialValue(DriverFactory.java:79)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory$1.initialValue(DriverFactory.java:1)
+      	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)
+      	at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory.getDriver(DriverFactory.java:115)
+      	at com.paxotech.abercrombie.qa.framework.BaseSteps.<init>(BaseSteps.java:9)
+      	at com.paxotech.abercrombie.qa.framework.steps.AppSteps.<init>(AppSteps.java:10)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+      	... 44 more
+      Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+      	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+      	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+      	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+      	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+      	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+      	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+      	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+      	... 59 more
+      Caused by: java.net.ConnectException: Connection refused
+      	at java.net.PlainSocketImpl.socketConnect(Native Method)
+      	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+      	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+      	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+      	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+      	at java.net.Socket.connect(Socket.java:589)
+      	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+      	... 72 more
+      [0m
+    [36mWhen [0m[36mBrowse to the url[0m                  [90m# AppSteps.browse_to_the_url()[0m
+    [36mThen [0m[36mabercrombie home page should show[0m  [90m# HomePageSteps.abercrombie_home_page_should_show()[0m
+
+  Scenario: 3. Valid user valid Password             [90m# src/test/resources/features/AbercrombieLogin.feature:23[0m
+    [36mWhen [0m[36mUser click login button[0m                     [90m# LoginPageSteps.user_click_login_button()[0m
+    [36mThen [0m[36mLogin page should show[0m                      [90m# LoginPageSteps.login_page_should_show()[0m
+    [36mWhen [0m[36mEnter "[0m[36m[1maktar203@gmail.com[0m[36m" as email address[0m [90m# LoginPageSteps.enter_as_email_address(String)[0m
+    [36mAnd [0m[36mEnter "[0m[36m[1mpaxotech123[0m[36m" as password[0m              [90m# LoginPageSteps.enter_as_password(String)[0m
+    [36mAnd [0m[36mClick login[0m                                  [90m# LoginPageSteps.click_login()[0m
+    [36mAnd [0m[36mWelcome message shows "[0m[36m[1mWelcome, m[0m[36m"[0m           [90m# LoginPageSteps.welcome_message_shows(String)[0m
+
+  Scenario Outline: 4. Valid user valid Password   [90m# src/test/resources/features/AbercrombieLogin.feature:31[0m
+    [36mWhen [0m[36mUser click login button[0m
+    [36mThen [0m[36mLogin page should show[0m
+    [36mWhen [0m[36mEnter "<email>" as email address[0m
+    [36mAnd [0m[36mEnter "<password>" as password[0m
+    [36mAnd [0m[36mClick login[0m
+    [36mThen [0m[36mWelcome message shows "<Welcome Message>"[0m
+    [36mAnd [0m[36mUser click on Logout button[0m
+
+    Examples: 
+
+  Background:                               [90m# src/test/resources/features/AbercrombieLogin.feature:2[0m
+    [31mGiven [0m[31mUser can browse to an application[0m [90m# AppSteps.user_can_browse_to_an_application()[0m
+      [31mcucumber.runtime.CucumberException: Error creating bean with name 'com.paxotech.abercrombie.qa.framework.steps.AppSteps': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:182)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+      	at org.junit.runners.Suite.runChild(Suite.java:128)
+      	at org.junit.runners.Suite.runChild(Suite.java:27)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+      	at org.junit.runners.Suite.runChild(Suite.java:128)
+      	at org.junit.runners.Suite.runChild(Suite.java:27)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+      	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+      	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+      Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.paxotech.abercrombie.qa.framework.steps.AppSteps': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1095)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1027)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:505)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:341)
+      	at cucumber.runtime.java.spring.GlueCodeScope.get(GlueCodeScope.java:15)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:336)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:216)
+      	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:317)
+      	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:298)
+      	at cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:180)
+      	... 50 more
+      Caused by: org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+      	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1088)
+      	... 60 more
+      Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory$1.initialValue(DriverFactory.java:79)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory$1.initialValue(DriverFactory.java:1)
+      	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)
+      	at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory.getDriver(DriverFactory.java:115)
+      	at com.paxotech.abercrombie.qa.framework.BaseSteps.<init>(BaseSteps.java:9)
+      	at com.paxotech.abercrombie.qa.framework.steps.AppSteps.<init>(AppSteps.java:10)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+      	... 62 more
+      Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+      	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+      	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+      	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+      	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+      	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+      	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+      	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+      	... 77 more
+      Caused by: java.net.ConnectException: Connection refused
+      	at java.net.PlainSocketImpl.socketConnect(Native Method)
+      	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+      	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+      	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+      	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+      	at java.net.Socket.connect(Socket.java:589)
+      	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+      	... 90 more
+      [0m
+    [36mWhen [0m[36mBrowse to the url[0m                  [90m# AppSteps.browse_to_the_url()[0m
+    [36mThen [0m[36mabercrombie home page should show[0m  [90m# HomePageSteps.abercrombie_home_page_should_show()[0m
+
+  Scenario Outline: 4. Valid user valid Password     [90m# src/test/resources/features/AbercrombieLogin.feature:42[0m
+    [36mWhen [0m[36mUser click login button[0m                     [90m# LoginPageSteps.user_click_login_button()[0m
+    [36mThen [0m[36mLogin page should show[0m                      [90m# LoginPageSteps.login_page_should_show()[0m
+    [36mWhen [0m[36mEnter "[0m[36m[1maktar203@gmail.com[0m[36m" as email address[0m [90m# LoginPageSteps.enter_as_email_address(String)[0m
+    [36mAnd [0m[36mEnter "[0m[36m[1mpaxotech123[0m[36m" as password[0m              [90m# LoginPageSteps.enter_as_password(String)[0m
+    [36mAnd [0m[36mClick login[0m                                  [90m# LoginPageSteps.click_login()[0m
+    [36mThen [0m[36mWelcome message shows "[0m[36m[1mWelcome, m[0m[36m"[0m          [90m# LoginPageSteps.welcome_message_shows(String)[0m
+    [36mAnd [0m[36mUser click on Logout button[0m                  [90m# LoginPageSteps.user_click_on_Logout_button()[0m
+
+  Background:                               [90m# src/test/resources/features/AbercrombieLogin.feature:2[0m
+    [31mGiven [0m[31mUser can browse to an application[0m [90m# AppSteps.user_can_browse_to_an_application()[0m
+      [31mcucumber.runtime.CucumberException: Error creating bean with name 'com.paxotech.abercrombie.qa.framework.steps.AppSteps': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:182)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+      	at org.junit.runners.Suite.runChild(Suite.java:128)
+      	at org.junit.runners.Suite.runChild(Suite.java:27)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+      	at org.junit.runners.Suite.runChild(Suite.java:128)
+      	at org.junit.runners.Suite.runChild(Suite.java:27)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+      	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+      	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+      Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.paxotech.abercrombie.qa.framework.steps.AppSteps': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1095)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1027)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:505)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:341)
+      	at cucumber.runtime.java.spring.GlueCodeScope.get(GlueCodeScope.java:15)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:336)
+      	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:216)
+      	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:317)
+      	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:298)
+      	at cucumber.runtime.java.spring.SpringFactory.getInstance(SpringFactory.java:180)
+      	... 50 more
+      Caused by: org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.paxotech.abercrombie.qa.framework.steps.AppSteps]: Constructor threw exception; nested exception is org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+      	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+      	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1088)
+      	... 60 more
+      Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'Shahriars-MacBook-Pro.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_91'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory$1.initialValue(DriverFactory.java:79)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory$1.initialValue(DriverFactory.java:1)
+      	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)
+      	at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+      	at com.paxotech.abercrombie.qa.framework.DriverFactory.getDriver(DriverFactory.java:115)
+      	at com.paxotech.abercrombie.qa.framework.BaseSteps.<init>(BaseSteps.java:9)
+      	at com.paxotech.abercrombie.qa.framework.steps.AppSteps.<init>(AppSteps.java:10)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+      	... 62 more
+      Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+      	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+      	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+      	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+      	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+      	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+      	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+      	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+      	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+      	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+      	... 77 more
+      Caused by: java.net.ConnectException: Connection refused
+      	at java.net.PlainSocketImpl.socketConnect(Native Method)
+      	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+      	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+      	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+      	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+      	at java.net.Socket.connect(Socket.java:589)
+      	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+      	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+      	... 90 more
+      [0m
+    [36mWhen [0m[36mBrowse to the url[0m                  [90m# AppSteps.browse_to_the_url()[0m
+    [36mThen [0m[36mabercrombie home page should show[0m  [90m# HomePageSteps.abercrombie_home_page_should_show()[0m
+
+  Scenario Outline: 4. Valid user valid Password   [90m# src/test/resources/features/AbercrombieLogin.feature:43[0m
+    [36mWhen [0m[36mUser click login button[0m                   [90m# LoginPageSteps.user_click_login_button()[0m
+    [36mThen [0m[36mLogin page should show[0m                    [90m# LoginPageSteps.login_page_should_show()[0m
+    [36mWhen [0m[36mEnter "[0m[36m[1maddto1@gmail.com[0m[36m" as email address[0m [90m# LoginPageSteps.enter_as_email_address(String)[0m
+    [36mAnd [0m[36mEnter "[0m[36m[1mpaxotech123[0m[36m" as password[0m            [90m# LoginPageSteps.enter_as_password(String)[0m
+    [36mAnd [0m[36mClick login[0m                                [90m# LoginPageSteps.click_login()[0m
+    [36mThen [0m[36mWelcome message shows "[0m[36m[1mWelcome, paxo[0m[36m"[0m     [90m# LoginPageSteps.welcome_message_shows(String)[0m
+    [36mAnd [0m[36mUser click on Logout button[0m                [90m# LoginPageSteps.user_click_on_Logout_button()[0m
