@@ -13,7 +13,7 @@
         <maven-compiler.version>3.2</maven-compiler.version>
         <cucumber.version>1.2.4</cucumber.version>
         <selenium.version>2.53.1</selenium.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <poi.version>3.10-FINAL</poi.version>
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <slf4j.version>1.6.4</slf4j.version>
