@@ -14,7 +14,7 @@
         <cucumber.version>1.2.4</cucumber.version>
         <selenium.version>2.53.1</selenium.version>
         <junit.version>4.12</junit.version>
-        <poi.version>3.10-FINAL</poi.version>
+        <poi.version>4.1.2</poi.version>
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <slf4j.version>1.6.4</slf4j.version>
         <logback.version>1.0.1</logback.version>
