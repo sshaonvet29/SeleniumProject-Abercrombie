@@ -17,7 +17,7 @@
         <poi.version>3.10-FINAL</poi.version>
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <slf4j.version>1.6.4</slf4j.version>
-        <logback.version>1.0.1</logback.version>
+        <logback.version>1.2.0</logback.version>
         <groovy.version>2.2.2</groovy.version>
         <guava.version>16.1</guava.version>
         <monte.version>1.0.1</monte.version>
