@@ -21,7 +21,7 @@
         <groovy.version>2.2.2</groovy.version>
         <guava.version>16.1</guava.version>
         <monte.version>1.0.1</monte.version>
-        <spring.version>4.1.0.RELEASE</spring.version>
+        <spring.version>4.2.7.RELEASE</spring.version>
     </properties>
 
     <dependencies>
